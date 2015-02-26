@@ -93,31 +93,5 @@ source("complete.R")
 cr <- corr("specdata", 150)
 
 head(cr)
- [1] -0.01896 -0.14051 -0.04390 -0.06816 -0.12351 -0.07589
+[1] -0.01896 -0.14051 -0.04390 -0.06816 -0.12351 -0.07589
 
-Grading
-
-This assignment will be graded using unit tests executed via the submit script you run on your computer. To obtain the submit script, run the following code in R:
-
-source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R")
-submit()
-
-Or you can download the script to your working directory.
-
-The first time you run the submit script it will prompt you for your Submission login and Submission password. These can be found at the top of the Programming Assignments page.
-
-When you execute the submit script in R, you will see the following menu (after typing in your submission login email and password):
-
-[1] 'pollutantmean' part 1
-[2] 'pollutantmean' part 2
-[3] 'pollutantmean' part 3
-[4] 'pollutantmean' part 4
-[5] 'complete' part 1
-[6] 'complete' part 2
-[7] 'complete' part 3
-[8] 'corr' part 2
-[9] 'corr' part 2
-[10]'corr' part 2
-Which part are you submitting [1-10]? 
-
-We will compare the output of your functions to the correct output. For each test passed you receive the specified number of points on the Assignments List web page.
