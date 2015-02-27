@@ -2,10 +2,9 @@
 # Set your working directory
 #setwd("")
 
-
 rankall <- function(outcome, num = "best") {
 
-      ## Read outcome data
+        ## Read outcome data
 	full_data <- read.csv("outcome-of-care-measures.csv", colClasses="character")
 
 	## Check that state and outcome are valid
@@ -38,7 +37,7 @@ rankall <- function(outcome, num = "best") {
 		}
 	}
 
-      ## For each state, find the hospital of the given rank
+        ## For each state, find the hospital of the given rank
 	pre_result <- lapply(data_by_state, rank_hospital, num)
 
 	## Return a data frame with the hospital names and the (abbreviated) state name
@@ -47,6 +46,7 @@ rankall <- function(outcome, num = "best") {
 
 
 # Run tests
+source("rankall.R")
 head(rankall("heart attack", 20), 10)
 
 #                              hospital state
