@@ -1,5 +1,5 @@
 
-#setwd("C:/Users/cg07510/Desktop/UTILI")
+#setwd("")
 
 #rankall <- function(outcome, num = "best") {
 ## Read outcome data
